@@ -1,0 +1,10 @@
+/bin
+geckodriver.log
+/include
+/lib
+__pycache__
+*.pyc
+.Python
+db.sqlite3
+/static
+pip-selfcheck.json
