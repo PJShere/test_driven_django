@@ -1,6 +1,6 @@
 
-#TDD Django Book
+**TDD Django Book**
 
-examples from test driven development using Django
+examples from the book test driven development using Django
 
-http://www.obeythetestinggoat.com/book/praise.harry.html
+[Test Driven Development using Django] (http://www.obeythetestinggoat.com/book/praise.harry.html)
