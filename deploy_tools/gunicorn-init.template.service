@@ -3,10 +3,10 @@ start on startup
 
 script
   # Change the working directory to where the Django app is
-  DJANGODIR=/home/superlists/sites/staging          # Django project directory
+  DJANGODIR=/home/vagrant/sites/DOMAIN  # Django project directory
   # Start the gunicorn server
   cd ${DJANGODIR}
-  exec ./virtualenv/bin/gunicorn --chdir ${DJANGODIR} --bind unix:/tmp/stagelist.socket superlists.wsgi:application
+  exec ./virtualenv/bin/gunicorn --chdir ${DJANGODIR} --bind unix:/tmp/DOMAIN.socket superlists.wsgi:application
 end script
 
 # Respawn and stop respawning if it got respawned 10 time in 10 seconds
