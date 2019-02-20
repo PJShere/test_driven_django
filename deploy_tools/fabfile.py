@@ -2,7 +2,7 @@ import random
 from fabric.contrib.files import append, exists
 from fabric.api import cd, env, local, run
 
-REPO_URL = 'https://github.com/pjshere/tdd_django.git'
+REPO_URL = 'https://github.com/pjshere/test_driven_django.git'
 
 
 def deploy():
@@ -36,7 +36,7 @@ def _update_static_files():
 
 
 def _update_database():
-    run('./virtualenv/bin/python/ manage.py migrate --noinput')
+    run('./virtualenv/bin/python manage.py migrate --noinput')
 
 
 def _create_or_update_dotenv():
